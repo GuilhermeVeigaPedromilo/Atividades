@@ -1,0 +1,53 @@
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        function log_eqnt() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    while (recorrente == true) {
+        window.alert("Digite o nome do usuário e senha");
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Ben") {
+            if (senha == "1010") {
+                window.alert("Você foi logado");
+                recorrente = false;
+            }
+        } else {
+            window.alert("Usuário ou senha incorreta");
+        }
+    }
+}
+function log_faca() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    do {
+        window.alert("Digite o nome do usuário e senha");
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Ben") {
+            if (senha == "1010") {
+                window.alert("Você foi logado");
+                recorrente = false;
+            }
+        } else {
+            window.alert("Usuário ou senha incorreta");
+        }
+    } while (recorrente == true);
+}
+    </script>
+ 
+    <body>
+        <button onclick="log_eqnt()">Login Enquanto</button>
+        <button onclick="log_faca()">Login Faça</button>
+    </body>
+</html>
