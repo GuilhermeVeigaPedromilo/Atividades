@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+
+</head>
+<body>
+    <h1>Funções</h1>
+    <br>
+    <br>
+    <script>
+        function escreve() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valA");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado1").innerText = var1.value*var1.value*var1.value;
+        }
+        function Celsius() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valB");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado2").innerText = (var1.value-32)*0.5556;
+        }
+        function TrianguloRetangulo() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valC");
+            var var2 = document.getElementById("valD");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado3").innerText = (var1.value*var2.value)/2;
+        }
+        function PerimetroCirculo() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valE");
+            var var2 = document.getElementById("valF");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado4").innerText = 2*var2.value*var1.value;
+        }
+        function AreaCirculo() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valG");
+            var var2 = document.getElementById("valH");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado5").innerText = (var1.value*var1.value)*var2.value;
+        }
+        function desconto() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valI");
+            var var2 = document.getElementById("valJ");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado6").innerText = var1.value-(var1.value*var2.value);
+        }
+        function Idade() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valK");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado7").innerText = 2023-var1.value;
+        }
+        function CombustivelV() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valL");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado8").innerText = (var1.value/5);
+        }
+        function LitrosKm() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valM");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado9").innerText = var1.value*20;
+        }
+    </script>
+    <input id="valA" value="0">
+    <button onclick="escreve()">Resultado</button>
+    <p id="resultado1">Resultado ao Cubo</p>
+
+    <input id="valB" value="0">
+    <button onclick="Celsius()">Resultado</button>
+    <p id="resultado2">Resultado em Celsius</p>
+
+    <input id="valC" value="Base">
+    <input id="valD" value="Altura">
+    <button onclick="TrianguloRetangulo()">Resultado</button>
+    <p id="resultado3">Resultado do Triangulo Retangulo</p>
+
+    <input id="valE" value="Raio">
+    <input id="valF" value="Valor de pi">
+    <button onclick="PerimetroCirculo()">Resultado</button>
+    <p id="resultado4">Resultado do Perimetro do Circulo</p>
+
+    <input id="valG" value="Raio">
+    <input id="valH" value="Valor de pi">
+    <button onclick="AreaCirculo()">Resultado</button>
+    <p id="resultado5">Resultado da Area do Circulo</p>
+
+    <input id="valI" value="Valor a ser descontado">
+    <input id="valJ" value="Coloque o valor do desconto em decimal">
+    <button onclick="desconto()">Resultado</button>
+    <p id="resultado6">Valor final</p>
+
+    <input id="valK" value="Digite o ano que nasceu">
+    <button onclick="Idade()">Resultado</button>
+    <p id="resultado7">Idade</p>
+
+    <input id="valL" value="Quanto vai comprar em R$">
+    <button onclick="CombustivelV()">Resultado</button>
+    <p id="resultado8">Litros Totais</p>
+
+    <input id="valM" value="Quantos litros tem">
+    <button onclick="LitrosKm()">Resultado</button>
+    <p id="resultado9">Km totais</p>
+    <style>
+        body {
+            background-color: rgba(235, 217, 195, 0.904);
+        }
+        input {
+            background-color: burlywood;
+            width: 400px;
+            height: 25px;
+            font-family: Georgia;
+            color: rgb(0, 0, 0)
+        }
+        button {
+            background-color: black;
+            width: 100px;
+            height: 25px;
+            font-family: Georgia;
+            color: white;
+        }
+    </style>
+
+</body>
+</html>
